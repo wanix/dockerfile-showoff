@@ -4,6 +4,10 @@ MAINTAINER Erwan SEITE <wanix(dot)fr(at)gmail.com>
 ENV DEBIAN_RELEASE jessie
 ENV DEBIAN_FRONTEND noninteractive
 ENV SHELL /bin/bash
+
+#Forcing locale first
+RUN apt-get update && apt-get install -y --force-yes locales && locale-gen en_US.UTF-8
+
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
@@ -26,7 +30,7 @@ RUN apt-get update && apt-get install -y --force-yes --no-install-recommends \
   && rm -rf /var/cache/apt/* \
   && rm -rf /var/log/apt/*
 
-RUN locale-gen ${LANG} && mkdir /srv/showoff && gem install showoff
+RUN mkdir /srv/showoff && gem install showoff
 
 COPY example/showoff.json /srv/showoff/showoff.json
 COPY example/testing.md /srv/showoff/testing.md
