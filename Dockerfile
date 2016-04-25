@@ -10,8 +10,11 @@ ENV LC_ALL en_US.UTF-8
 RUN apt-get update && apt-get install -y --force-yes --no-install-recommends \
   ruby \
   ruby-dev \
+  rubygems-integration \
   ruby-rmagick \
+  libxml2 \
   make \
+  patch \
   gcc \
   g++ \
   zlib1g-dev \
