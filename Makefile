@@ -6,7 +6,3 @@ clean:
 		docker rm -f showoff
 log:
 		docker logs -f showoff
-port:
-		docker port showoff 9090
-enter:
-		docker exec -it showoff /bin/sh
