@@ -1,13 +1,13 @@
 FROM debian:jessie
-MAINTAINER Erwan SEITE <wanix(dot)fr@gmail.com>
+MAINTAINER Erwan SEITE <wanix(dot)fr(at)gmail.com>
 
-ENV RELEASE jessie
+ENV DEBIAN_RELEASE jessie
 ENV DEBIAN_FRONTEND noninteractive
 ENV SHELL /bin/bash
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --force-yes --no-install-recommends \
   ruby \
   ruby-dev \
   ruby-rmagick \
@@ -19,9 +19,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && rm -rf /var/cache/apt/* \
-  && rm -rf /var/log/apt/* \
-  && gem install showoff \
-  && mkdir /srv/showoff
+  && rm -rf /var/log/apt/*
+
+RUN mkdir /srv/showoff && gem install showoff
 
 COPY example/showoff.json /srv/showoff/showoff.json
 COPY example/testing.md /srv/showoff/testing.md
