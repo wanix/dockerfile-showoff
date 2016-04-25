@@ -32,3 +32,5 @@ Now you can connect on the port 9090 of your server with your favorite browser t
  docker build -t wanix/showoff
  ```
 
+## Licence ##
+[Apache Licence V2](LICENSE)
