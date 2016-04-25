@@ -1,7 +1,6 @@
 FROM debian:jessie
-MAINTAINER Erwan SEITE <wanix(dot)fr(at)gmail.com>
+MAINTAINER Erwan SEITE <wanix(dot)fr(at)gmail(dot)com>
 
-ENV DEBIAN_RELEASE jessie
 ENV DEBIAN_FRONTEND noninteractive
 ENV SHELL /bin/bash
 
@@ -32,8 +31,6 @@ RUN apt-get update && apt-get install -y --force-yes --no-install-recommends \
 
 RUN mkdir /srv/showoff && gem install showoff
 
-#ADD https://raw.githubusercontent.com/wanix/dockerfile-showoff/master/example/showoff.json /srv/showoff/showoff.json
-#ADD https://raw.githubusercontent.com/wanix/dockerfile-showoff/master/example/testing.md /srv/showoff/testing.md
 COPY example/showoff.json /srv/showoff/showoff.json
 COPY example/testing.md /srv/showoff/testing.md
 
