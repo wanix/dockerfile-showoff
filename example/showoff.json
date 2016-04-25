@@ -1,0 +1,9 @@
+{
+  "name": "Example",
+  "description": "Example Presentation",
+  "author": "Wanix",
+  "pause_msg": "Paused !!!",
+  "sections": [
+    "testing.md",
+  ]
+}
