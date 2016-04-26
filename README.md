@@ -24,6 +24,11 @@ Serving Puppetlabs examples:
 
 Now you can connect on the port 9090 of your server with your favorite browser to see the result
 
+Generating pdf:
+ ``` shell
+ docker exec -it showoff /bin/bash -c 'cd /srv/showoff && xvfb-run --server-args="-screen 0, 1920x1080x24" showoff pdf'
+ ```
+
 ## building ##
 
  ``` shell

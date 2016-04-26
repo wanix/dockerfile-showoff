@@ -4,7 +4,7 @@ MAINTAINER Erwan SEITE <wanix(dot)fr(at)gmail(dot)com>
 ENV DEBIAN_FRONTEND noninteractive
 ENV SHELL /bin/bash
 
-#Forcing locale first 
+#Forcing locale first
 RUN apt-get update && apt-get install -y --force-yes locales && locale-gen C.UTF-8
 
 ENV LANG C.UTF-8
@@ -24,6 +24,7 @@ RUN apt-get update && apt-get install -y --force-yes --no-install-recommends \
   g++ \
   zlib1g-dev \
   wkhtmltopdf \
+  xvfb \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && rm -rf /var/cache/apt/* \
