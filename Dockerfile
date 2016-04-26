@@ -23,13 +23,12 @@ RUN apt-get update && apt-get install -y --force-yes --no-install-recommends \
   gcc \
   g++ \
   zlib1g-dev \
-  wkhtmltopdf \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \
   && rm -rf /var/cache/apt/* \
   && rm -rf /var/log/apt/*
 
-RUN mkdir /srv/showoff && gem install showoff
+RUN mkdir /srv/showoff && gem install showoff pdfkit
 
 COPY example/showoff.json /srv/showoff/showoff.json
 COPY example/testing.md /srv/showoff/testing.md

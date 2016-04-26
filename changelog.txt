@@ -1,0 +1,6 @@
+20160426 Version 0.2 Erwan SEITE (wanix.fr(at)gmail.com)
+  Changes due to showoff version 0.0.12 (pdfkit)
+
+20160425 Version 0.1 Erwan SEITE (wanix.fr(at)gmail.com)
+  first release
+
