@@ -1,6 +1,7 @@
-20160426 Version 0.2 Erwan SEITE (wanix.fr(at)gmail.com)
+20160428 Version 0.2 Erwan SEITE (wanix.fr(at)gmail.com)
   Changes due to showoff version 0.0.12 (pdfkit)
+	pdf generation should be broken in showoff v0.0.12:	https://github.com/puppetlabs/showoff/pull/442
+	migrating from Debian:Jessie to gliderlabs/alpine : 614.1 MB to 419.3 MB
 
 20160425 Version 0.1 Erwan SEITE (wanix.fr(at)gmail.com)
   first release
-
