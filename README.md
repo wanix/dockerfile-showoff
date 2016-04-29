@@ -1,3 +1,7 @@
+[![Docker Pulls](https://img.shields.io/docker/pulls/wanix/showoff.svg)](https://hub.docker.com/r/wanix/showoff/)
+[![Docker Stars](https://img.shields.io/docker/stars/wanix/showoff.svg)](https://hub.docker.com/r/wanix/showoff/)
+[![](https://badge.imagelayers.io/wanix/showoff:latest.svg)](https://imagelayers.io/?images=wanix/showoff:latest)
+
 # dockerfile-showoff #
 Showoff dockerfile with all options for showoff
 
