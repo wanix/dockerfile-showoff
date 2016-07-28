@@ -7,8 +7,6 @@ Showoff dockerfile with all options for showoff
 
 Volume given is /srv/showoff
 
-The pdf generation is broken with pictures in presentation (showoff 0.0.12) : https://github.com/puppetlabs/showoff/pull/442
-
 ## Exemple of use with puppetlabs examples ##
 Getting docker image:
 
