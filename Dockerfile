@@ -8,7 +8,7 @@ RUN apk add --update --no-cache \
     zlib-dev \
     xvfb dbus mesa-dri-swrast \
   && apk add wkhtmltopdf --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted --no-cache
-RUN gem install pdfkit --no-ri --no-rdoc && gem install nokogiri --no-ri --no-rdoc && gem install showoff -v 0.13.3 --no-ri --no-rdoc
+RUN gem install pdfkit --no-ri --no-rdoc && gem install nokogiri --no-ri --no-rdoc && gem install showoff --no-ri --no-rdoc
 RUN apk del --purge binutils-libs binutils isl libgomp libatomic mpfr3 mpc1 gcc make musl-dev libc-dev fortify-headers g++ build-base zlib-dev
 
 RUN mkdir -p /srv/showoff && mv /usr/bin/wkhtmltopdf /usr/bin/wkhtmltopdf.ori \
