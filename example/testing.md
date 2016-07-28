@@ -1,6 +1,8 @@
 <!SLIDE title-slide>
 # Welcome to the example page #
 
+Press &#8594; 
+
 <!SLIDE>
 # Congratulations#
 You have installed the docker image wanix/showoff, now you have to make your own presentation and export it in /srv/showoff:
