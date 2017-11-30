@@ -1,7 +1,7 @@
 FROM gliderlabs/alpine:3.6
 MAINTAINER Erwan SEITE <wanix(dot)fr(at)gmail(dot)com>
 
-ENV SHOWOFF_VERSION 0.19.2
+ENV SHOWOFF_VERSION 0.19.3
 RUN apk add --update --no-cache \
     ruby ruby-dev ruby-rdoc ruby-irb ruby-libs \
     ghostscript-fonts musl \
