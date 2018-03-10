@@ -1,13 +1,12 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/wanix/showoff.svg)](https://hub.docker.com/r/wanix/showoff/)
 [![Docker Stars](https://img.shields.io/docker/stars/wanix/showoff.svg)](https://hub.docker.com/r/wanix/showoff/)
+[![GitHub tag](https://img.shields.io/github/tag/wanix/dockerfile-showoff.svg?maxAge=2592000)]()
 [![](https://badge.imagelayers.io/wanix/showoff:latest.svg)](https://imagelayers.io/?images=wanix/showoff:latest)
 
 # dockerfile-showoff #
 Showoff dockerfile with all options for showoff
 
 Volume given is /srv/showoff
-
-The pdf generation is broken with pictures in presentation (showoff 0.0.12) : https://github.com/puppetlabs/showoff/pull/442
 
 ## Exemple of use with puppetlabs examples ##
 Getting docker image:
