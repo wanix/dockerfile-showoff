@@ -1,0 +1,6 @@
+*.swp
+.vscode/
+*.iml
+*.retry
+
+example/stats

@@ -24,16 +24,10 @@ cd /tmp && git clone https://github.com/puppetlabs/showoff.git
 Serving Puppetlabs examples:
 
 ``` shell
-docker run -d -p 9090:9090 -P -h showoff --name showoff -v /tmp/showoff/example:/srv/showoff wanix/showoff
+docker run -d -p 9090:9090 -P -h showoff --name showoff -v $PWD/example:/srv/showoff wanix/showoff
 ```
 
 Now you can connect on the port 9090 of your server with your favorite browser to see the result
-
-Generating pdf:
-
-``` shell
-docker exec -it showoff /bin/sh -c 'cd /srv/showoff && showoff pdf'
-```
 
 ## building ##
 
